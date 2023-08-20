@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+    <title>
+        Practice
+    </title>
+    <body>
+        <h1>WELCOME TO MY WEBPAGE</h1>
+        <hr/>
+        <h4>Headings:</h4>
+        <h2>Here you can enjoy all the different elements of html being implemented!</h2>
+        <h3>This is a smaller heading that is possible</h3>
+        <h4>Another one is possible</h4>
+        <h5>What? theres more?</h5>
+        <h6>GOD DAMN THIS IS SO COOL</h6>
+        <h6>The line on the top and the one below is made using the &lt;hr /&gt; tag</h6>
+        <hr/>
+        <h4>Paragraphs:</h4>
+        <p>This is what you can call a paragraph it a very popular way to write stuff and to make up a lot of all 
+            the webpages in the world<br />
+            You can truly enjoy what you see <br />
+            the &lt;br /&gt; tag is used to give spaces/breaks <br/>
+        </p>
+        <hr />
+        <h4>To create a list use the &lt;ol or ul&gt; tag:</h4>
+        <h4>Unordered List:</h4>
+        <ul>
+            <li>This a list element created using the &lt;li&gt; tag</li>
+            <li>Last for the unordered list</li>
+        </ul>
+        <h4>Ordered List:</h4>
+        <ol start = 5>
+            <li>This is ordered list</li>
+            <li>It usually starts with 1 and goes on</li>
+            <li>We can edit this by adding a "start" attribute at the top</li>
+        </ol>
+        <h4>Definition List:</h4>
+        <dl>
+            <dt>15<sup>th</sup></dt>
+            <dd>Independence day</dd>
+            <dt>26<sup>th</sup></dt>
+            <dd>Republice day</dd>
+        </dl>
+        <hr />
+        <h4>To create a link use the &lt;a with href="" &gt; tag:</h4>
+        <a id = "git" href = "https://github.com">Github</a> <label for="git"> This is an example of a link</label>
+        <p>The one next to the link is called the label , it has an attribute called for which is kept equal to the id of the element it is to be bundled with.</p>
+        <hr />
+        <h4>To use images in the site use &lt;img src = ""&gt; tag:</h4>
+        <img  id = "img" src = "img.png" height = "50" width = "50" alt = "note label" /><br /><br />
+        <label for = "s">This image has width attribute = 50 and height = 50 and an alt attribute which<br/>
+        tells which image it is if we hover.</label>
+        <p>We can use the same image as a link in it self as well:</p>
+        <a href = "https://spotify.com/" ><img  id = "s" src = "s.png" height = "50" width = "50" alt = "Spotify label" /></a>
+        <br /><br />
+        <label>This is now an image with an embedded link to the spotify webpage</label>
+        <hr />
+        <h4>There are special characters that you need that can be used :</h4>
+        <p><sub>22</sub>2<sup>36</sup> , &gt; , &lt; , &larr; , &rarr; , &lrarr; , etc.</p>
+        <hr />
+        <h4>We can create tables using the &lt;table&gt; tag:</h4>
+        <table border="border" width = "500" height = "200" >
+            <caption>Basic Table Example</caption>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>AGE</th>
+                <th>GENDER</th>
+            </tr>
+            <tr>
+                <td align="center">0</td>
+                <td align="center">Rachit Verma</td>
+                <td align="center">26-11-2004</td>
+                <td align = "center">18</td>
+                <td align = "center"> M</td>
+            </tr>
+            <tr>
+                <td align = "center">1</td>
+                <td align = "center">Pick</td>
+                <td align = "center">22-12-2002</td>
+                <td align = "center">20</td>
+                <td align = "center">F</td>
+            </tr>
+        </table>
+        <hr/>
+        <h4>We can Create Forms and its element using &lt;form&gt; tag:</h4>
+        <form type = "post" target="s.php">
+            <fieldset>
+                <legend>Basic Form To Get Credentials:</legend><br/>
+                <label for = "Fname"><label>First name</label><br/>
+                <input type="text" id = "Fname" name = "fname" placeholder="Enter your first name"><br /><br />
+                <label for = "lname">Last name</label><br>
+                <input type = "text" name = "lastname" placeholder="Enter your last name" id = "lname"> <br/><br/>
+                <label for = "course">Select your course: </label>
+                <select id = "course" name = "courses">
+                    <option value="Cse">CSE</option>
+                    <option value="AIML">AIML</option>
+                    <option value="ECE">ECE</option>
+                    <option value = "MECH">MECH</option>
+                    <option selected value = "AIML">AIML</option>
+                </select><br /><br/>
+                <label for = "gender">Gender :</label><br/>
+                <input type = "radio" name = "gender" id = "gender">Male
+                <input type = "radio" name = "gender" id = "gender">Female
+                <input type = "radio" name = "gender" id = "gender">Prefer not to say
+                <input type = "radio" name = "gender" id = "gender">Walmart Bag
+                <br/><br/>
+                <label for = "Color">Pick your colour: </label>
+                <input type="color" id = "color" placeholder= "blue">
+                <br /><br/>
+                <label for = "date">DOB : </label>
+                <input type="date" min= "2005-12-12" id = "date">
+                <br />
+                <br />
+                <label for = "email">Email</label><br />
+                <input type = "email" id  = "email" placeholder="Enter you email">
+                <br/><br/>
+                <label for = "file">Attach your Resumé </label><br/><br/>
+                <input type = "file" id = "file"><br/><br/>
+                <label>Number input: </label>
+                <input type = "number" min = "0" max = "190">
+                <br/><br/>
+                <label for = "id">How was your experience?</label><br/>
+                <input type = "range" id = "exp" min = "0" max = "10"><br/><br/>
+                <label for = "t">Time : </label>
+                <input type = "time" id = "t">
+                <br/><br/>
+                <input type = "submit" id = "submit">
+            </fieldset>
+        </form>
+        <hr/>
+
+    </body>
+</html>
